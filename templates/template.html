@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bailey Luu</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+  <!-- To link the CSS file to HTML file, I need to use url_for() function is used to build a URL to the specific function dynamically. Syntax is url_for('static', filename('css_file_Name'). CSS file is inside static folder. -->
 </head>
 <body>
   <div class="typewriter">
     <h1>Hi, I'm Bailey Luu 👋 </h1>
   </div>
   <br>
-  <div style="text-align: center;">
+ <!-- My Avatar-->
+  <div style="text-align: center;"> 
      <img class="avatar" src="{{url_for('static', filename='bailey2.jpg')}}" align="middle" />
+     <!-- To link the image, I need to use url_for() which is the same as when I link CSS file. Image must be put inside static folder -->
   </div>
   <div style="text-align: center;">
     <a href="https://twitter.com/bailey_luu" target="_blank"><img class="media" src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Twitter"></a>
